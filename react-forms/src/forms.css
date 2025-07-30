@@ -1,0 +1,14 @@
+input, label, button, textarea{
+    padding: 5px;
+    margin: 5px;
+}
+button{
+    width: 100%;
+}
+.comment{
+    background-color: black;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    margin: 5px;
+}

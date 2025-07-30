@@ -1,0 +1,80 @@
+STATE IN REACT 
+-a state is a built in react object that is used to contain
+data or information abou the component.
+
+-a compnent's state can change over time, whenever it changes,
+the component re-renders.
+
+component -> function -> render
+
+but we want rerendering of some object that we have created, hence we use
+states
+
+-props in react are immutable
+
+
+###  HOOOKS
+-new addition in React 16.8
+-let you  use states and other react features without writing a class
+const [ state, setState ] = useState(initialState)
+
+useState returns an array with exactly 2 values:
+    1. current state
+    2. the set function, that lets you update the state to a different value
+
+-value in UI is updated during the re-rerendering
+-while the variable value updates during rerenderingof some function
+
+### CALLBACK in updater function
+-the setState function is an asynchronous function and thus it doesn'that
+execute predictabily, hence we require a callback
+
+                    callback
+                       |
+                ----------------
+                |              |
+            new state        new state
+        depend on old val   doesn't depend on old value
+
+-re-rendering will only occur if there is a change in the component's state
+
+### ARRAYS
+-map function
+-[...array] destructing the structure to be able to manipulate the structure
+
+### lifting state up
+-sending the use state up the heirarchy in the components as a better
+designing practice
+
+#logical components - smart component - change logic
+#presentational components - dumb component - no state change happens
+
+### HANDLING FORMS IN REACT
+- they maintain their own state and not react state
+- like all data getting removed after submitting of FORMS
+- we need to use controlled components
+
+- when there are multiple input fields we create a common handleInputChange()
+function for all the inputs
+
+- and rather than making a new state for each input we can create an object having
+all the fields from the form
+
+### useEffect()
+- lets you perform side effects in the function components
+- data fetching, setting up a subscription, and manually changing the DOM in React
+components are all examples of side effects
+
+##REDUX
+- state management library for js apps
+- redux is built for larger, moe complex applications
+- redux toolkit is the official recommendation of writing 
+redux code
+
+--main components of redux architecture
+1. store : a centralized store that holds the whole state tree of your applications
+2. reducers : function that take the current state and action as arguments, and return a new
+state result---- (state , aciton) => new state
+3. action : in plain js object that has type field( like events )
+4. slice : collection of redux reducer logic and actions for a single together in
+a single field
