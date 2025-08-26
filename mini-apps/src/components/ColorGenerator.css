@@ -1,0 +1,86 @@
+.container{
+    margin: auto 0;
+    padding-top: 1rem;
+}
+
+.displayColor{
+    margin-top: 10rem; 
+    color: white;
+    font-size: 2rem;
+}
+
+.code{
+    margin-top: 0;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.type{
+    width: 23rem;
+}
+
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  margin: .5rem;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* star-rating */
+.star-rating {
+  background-color: #121212;
+  padding: 2rem;
+  margin: 2rem auto;
+  height: auto;
+  width: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  color: gold;
+  transition: color 0.3s ease, transform 0.2s ease;
+  transform: scale(1.05);
+}
+
+.inactive {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.star-rating:hover .inactive {
+  color: #888;
+}
+
+.star-rating:hover {
+  background-color: #1f1f1f;
+}

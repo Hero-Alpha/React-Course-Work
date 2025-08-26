@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar container */
+.tree-main-container {
+  left: 0;
+  width: 360px;
+  height: 100vh;
+  background-color: #1f2937; /* Tailwind slate-800 */
+  color: #fff;
+  padding: 20px 16px;
+  overflow-y: hidden;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menu list base */
+.menu-list-container {
+  list-style: none;
+}
+
+/* Top-level items */
+.menu-list-container li {
+  margin-bottom: 8px;
+}
+
+/* Label with toggle */
+.menu-list-container li > p {
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #e2e8f0; /* Slightly brighter slate */
+  background-color: transparent;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-list-container li > p:hover {
+  background-color: #374151; /* Tailwind slate-700 */
+}
+
+/* Toggle icons */
+.menu-list-container li span {
+  color: #f0f1f4; /* gray-400 */
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Nested children */
+.menu-list-container li ul {
+  margin-top: 5px;
+  margin-left: 12px;
+  padding-left: 10px;
+  border-left: 1px dashed #4b5563;
+}
+
+/* Child items */
+.menu-list-container li ul li p {
+  font-size: 15px;
+  padding: 8px 12px;
+  color: #cbd5e1; /* slate-300 */
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-list-container li ul li p:hover {
+  background-color: #334155;
+}
+
+.menu-item {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.menu-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #e2e8f0;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.menu-label-row:hover {
+  background-color: #374151;
+}
+
+.menu-label {
+  font-size: 16px;
+}
+
+.menu-icon {
+  font-size: 12px;
+  color: #9ca3af;
+}
