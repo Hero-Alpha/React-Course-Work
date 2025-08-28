@@ -1,0 +1,73 @@
+/* ===== Container ===== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Input Box ===== */
+.input-box input {
+  width: 420px;
+  padding: 14px 18px;
+  font-size: 25px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.input-box input:focus {
+  border-color: #2563eb;        /* blue border */
+  box-shadow: 0 5px 12px rgba(37,99,235,0.3);
+}
+
+/* ===== Suggestion Box ===== */
+.suggestion-box {
+  width: 420px;
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  animation: dropdownFade 0.2s ease-in-out;
+}
+
+/* ===== Suggestion List ===== */
+.suggestion-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion-box li {
+  padding: 12px 18px;
+  font-size: 17px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background 0.2s, color 0.2s;
+}
+
+.suggestion-box li:last-child {
+  border-bottom: none;
+}
+
+.suggestion-box li:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* ===== Animations ===== */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

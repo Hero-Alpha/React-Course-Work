@@ -13,6 +13,7 @@ import LightDark from './components/Theme Toggler/LightDark';
 import TabsParent from './components/Custom Tabs/tabsParent';
 import Model_tester from './components/Custom Model/Model_tester';
 import SearchPanel from './components/GitHub Profile Finder/SearchPanel';
+import SearchBar from './components/Search Complete Console/SearchBar';
 
 function App() {
   return (
@@ -36,9 +37,11 @@ function App() {
       <h1>Custom Tabs Console</h1>
       <TabsParent />
       <h1>Custom Model Console</h1>
-      <Model_tester /> */}
+      <Model_tester />
       <h1>GitHub Profile Founder</h1>
-      <SearchPanel />
+      <SearchPanel /> */}
+      <h1>Search Suggestion Console</h1>
+      <SearchBar />
     </div>
   );
 }
